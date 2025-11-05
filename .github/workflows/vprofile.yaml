@@ -17,6 +17,7 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
+          distribution: 'temurin'   # ✅ Required: specify JDK distribution
           java-version: '17'
 
       - name: Build with Maven
